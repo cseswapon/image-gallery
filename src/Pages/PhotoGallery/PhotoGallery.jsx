@@ -4,51 +4,65 @@ import LayOutImages from "../../Components/LayoutImages/LayOutImages";
 import "./PhotoGallery.css";
 import { DndProvider } from "react-dnd";
 import { HTML5Backend } from "react-dnd-html5-backend";
+
+import img1 from '../../img/image-1.webp';
+import img2 from '../../img/image-2.webp';
+import img3 from '../../img/image-3.webp';
+import img4 from "../../img/image-4.webp";
+import img5 from "../../img/image-5.webp";
+import img6 from "../../img/image-6.webp";
+import img7 from "../../img/image-7.webp";
+import img8 from "../../img/image-8.webp";
+import img9 from "../../img/image-9.webp";
+import img10 from "../../img/image-10.jpeg";
+import img11 from "../../img/image-10.jpeg";
+import addImages from '../../img/addImage.png';
+
 const PhotoGallery = () => {
   const images = [
     {
       id: 1,
-      name: "/public/img/image-1.webp",
+      name: img1,
     },
     {
       id: 2,
-      name: "/public/img/image-2.webp",
+      name: img2,
     },
     {
       id: 3,
-      name: "/public/img/image-3.webp",
+      name: img3,
     },
     {
       id: 4,
-      name: "/public/img/image-4.webp",
+      name: img4,
     },
     {
       id: 5,
-      name: "/public/img/image-5.webp",
+      name: img5,
     },
     {
       id: 6,
-      name: "/public/img/image-6.webp",
+      name: img6,
     },
     {
       id: 7,
-      name: "/public/img/image-7.webp",
+      name: img7,
     },
     {
       id: 8,
-      name: "/public/img/image-8.webp",
+      name: img8,
     },
     {
       id: 9,
-      name: "/public/img/image-9.webp",
+      name: img9,
     },
     {
       id: 10,
-      name: "/public/img/image-10.jpeg",
+      name: img10,
     },
     {
       id: 11,
-      name: "/public/img/image-11.jpeg",
+      name: img11,
     },
   ];
   const [state, setState] = useState({
@@ -142,7 +156,7 @@ const PhotoGallery = () => {
               position: "relative",
             }}
           >
-            <img src="/public/img/addImage.png" alt="addImage" />
+            <img src={addImages} alt="addImage" />
             <input
               className="file-upload"
               type="file"
