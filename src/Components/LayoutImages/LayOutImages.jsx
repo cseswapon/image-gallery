@@ -14,7 +14,6 @@ const style = {
   justifyContent: "center",
   overflow: "hidden",
   borderRadius: "10px",
-  border: "1px solid #ccc",
   margin: "0 10px 10px 0",
   "&:hover": {
     border: "1px solid #000",
