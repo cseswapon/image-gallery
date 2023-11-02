@@ -15,7 +15,7 @@ import img7 from "../../img/image-7.webp";
 import img8 from "../../img/image-8.webp";
 import img9 from "../../img/image-9.webp";
 import img10 from "../../img/image-10.jpeg";
-import img11 from "../../img/image-10.jpeg";
+import img11 from "../../img/image-11.jpeg";
 import addImages from '../../img/addImage.png';
 
 const PhotoGallery = () => {
