@@ -52,7 +52,7 @@ To interact with the live demo of this project, please visit [Live Demo Link](ht
 
 ## Submission
 
-You can access the project's source code on [GitHub](https://github.com/swaponkumarsaha/image-gallery).
+You can access the project's source code on [GitHub](https://github.com/cseswapon/image-gallery).
 
 ## Local Run This Application
 
