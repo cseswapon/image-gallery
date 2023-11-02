@@ -44,6 +44,20 @@ p {
   cursor: grab;
 }
 
+/* mobile view */
+@media (max-width: 768px) {
+  .image-grid {
+    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+  }
+}
+
+/* tab view */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .image-grid {
+    grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+  }
+}
+
 .image-grid > div {
   position: relative;
 }

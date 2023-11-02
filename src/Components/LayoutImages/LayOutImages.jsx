@@ -6,16 +6,23 @@ import { useDrag, useDrop } from "react-dnd";
 const style = {
   backgroundColor: "white",
   cursor: "move",
+  position: "relative",
+  width: "100%",
+  height: "100%",
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
+  overflow: "hidden",
+  borderRadius: "10px",
+  border: "1px solid #ccc",
+  margin: "0 10px 10px 0",
+  "&:hover": {
+    border: "1px solid #000",
+  },
 };
 
 const LayOutImages = (props) => {
-  const {
-    image,
-    index,
-    state,
-    handelSet,
-    moveGrid,
-  } = props;
+  const { image, index, state, handelSet, moveGrid } = props;
   const [checked, setChecked] = useState(false);
   const ref = useRef(null);
 
@@ -53,6 +60,9 @@ const LayOutImages = (props) => {
 
   const [{ isDragging }, drag] = useDrag({
     type: "image",
+    options: {
+      dropEffect: "copy",	
+    },
     item: () => {
       return { index };
     },
@@ -61,7 +71,7 @@ const LayOutImages = (props) => {
     }),
   });
 
-  const opacity = isDragging  ? 0 : 1;
+  const opacity = isDragging ? 0 : 1;
   drag(drop(ref));
 
   const handleCheckboxChange = useCallback(
