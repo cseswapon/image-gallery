@@ -47,7 +47,7 @@ p {
 /* mobile view */
 @media (max-width: 768px) {
   .image-grid {
-    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+    grid-template-columns: repeat(auto-fit,minmax(100%,2fr));
   }
 }
 
